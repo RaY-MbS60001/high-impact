@@ -1,0 +1,41 @@
+ 
+        <h2>first content</h2>
+        <!--first row div-->
+        
+        <div class="row">
+				  
+            <div class="card">
+              <img src="kname2.jpg" class="card-img-top" alt="alt over here" />
+              <div class="card-body">
+                <a href="page2.html" class="btn btn-primary"><>BROWSE<></a>
+              </div>
+            </div>
+        </div>>
+
+
+
+
+
+    /*.card{
+    height: fit-content;
+    width: 210px;
+    align-items: center;
+}
+
+.card-img-top{
+    width: 210px;
+}
+
+*/
+
+
+/*
+.row{
+    align-self: start;
+    max-height: 300px;
+    width: 1140px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+*/

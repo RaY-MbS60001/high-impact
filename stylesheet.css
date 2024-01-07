@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    max-height: 80px;
+}
+
+.rams-col{
+    width: 600px;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    padding: 16px;
+    margin: 0px;
+    max-height: 55px;
+    display: block;
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #dbd5d5;
+    color: #000000;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+    max-height: 1140px;
+    overflow-y: auto;
+}
+
+section{
+    width: 60%;
+    max-height: 1140px;
+    float: left;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+article{
+    width: 20%;
+    float: right;
+    padding: 10px;
+    max-height: 1140px;
+    overflow-y: auto;
+}
+
+footer{
+    display: block;
+    clear: both;
+    background-color: rgb(112, 112, 112);
+    text-align: center;
+    padding: 20px;
+}
+
+/*creating a header*/
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px; /* Adjust the margin as needed */
+    max-width: 600px;
+    max-height: 20px;
+}
+
+.search__input {
+    width: 600px; /* Adjust the width as needed */
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*creating a product card*/
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .product-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .product-card button:hover {
+    opacity: 0.7;
+  }
+
+
+  /*creating a scrollable environment*/
+.scrollmenu {
+    width: 100%;
+    height: fit-content;
+
+    /**used to scroll text*/
+    white-space: nowrap;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /**keep scrolling when
+      *finger or cursor scrolling*/
+    -webkit-overflow-scrolling: touch; 
+}
+.product-card {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 250px;
+    float: none;
+    display: inline-block;
+}
+/*to hide the scrollbars*/
+::-webkit-scrollbar {
+    display: none;
+}
+.scrollmenu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.span{
+    position: relative;;
+}
+
+/*subbscription article page*/
+.wrapper{
+    align-items: center;
+    text-align: center;
+    background-color: pink;
+}
+.logo{
+    width: 10px;
+}
+.user-icon {
+    align-items: right;
+}
+
+/*creating three rams button*/
+.container {
+    cursor: pointer;
+    max-height: 35px;
+    max-width: 5px;
+    padding: 0px;
+    margin-left: 0%;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  /*cellphone device screen*/
+@media screen and (max-width: 600px) {
+    aside, section, article {
+        width: 100%;
+    }
+    aside{ /*attach a drop down button for viewing more content*/
+        float: left;
+        padding: 10px;
+        max-height: 240px;
+        overflow-y: auto;
+    }
+ 
+    
+    section{
+        max-height: 500px;
+        float: left;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    article{
+        float: right;
+        padding: 10px;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+
+
+    /*creating a mobile device nav bar*/
+    .navbar{
+        display: none;
+    }
+    
+    .navbar ul{
+        list-style-type: none;
+        background-color: rgb(0, 0, 0);
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        overflow:visible
+    }
+
+    .navbar a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a:hover{
+        background-color: #dbd5d5;
+        color: #000000;
+    }
+
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+    .navbar.active {
+        display: block;
+        list-style-type: none;
+    }
+
+    /*search bar version in a device*/
+    .search__input {
+        width: 250px; /* Adjust the width as needed */
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .rams-col{
+        width: 90px;
+    }
+}
